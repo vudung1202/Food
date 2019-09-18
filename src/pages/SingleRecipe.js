@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default class SingleRecipe extends Component {
   constructor(props) {
     super(props);
-    const id = this.props.id;
+    const id = this.props.match.params.id;
 
     this.state = {
       recipe: recipeData,
@@ -95,13 +95,13 @@ export default class SingleRecipe extends Component {
               </a>
               <ul className="list-group mt-4">
                 <h2 className="mt-3 mb-4">Ingredients</h2>
-                {/* {ingredients.map((item, index) => {
+                {ingredients.map((item, index) => {
                   return (
                     <li key={index} className="list-group-item text-slanted">
                       {item}
                     </li>
                   );
-                })} */}
+                })}
               </ul>
             </div>
           </div>

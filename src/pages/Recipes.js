@@ -66,8 +66,8 @@ export default class Recipes extends Component {
       <React.Fragment>
         <Search
           search={this.state.search}
-          handleChange={this.state.handleChange}
-          handleSubmit={this.state.handleSubmit}
+          handleChange={this.handleChange}
+          handleSubmit={this .handleSubmit}
         />
 
         {this.state.error ? (
